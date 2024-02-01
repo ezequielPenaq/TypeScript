@@ -1,4 +1,4 @@
-import knex, { Knex as setupKnex, Knex} from 'knex';
+import  { knex as setupKnex, Knex} from 'knex';
 import { env } from './env';
 
 //console.log(process.env)
@@ -14,6 +14,4 @@ export const config: Knex.Config = {
 
   },
 };
-const knexInstance = knex(config);
-
-export { knexInstance, knex };
+export  const knex= setupKnex(config)
