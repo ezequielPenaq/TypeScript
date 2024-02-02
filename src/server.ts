@@ -1,11 +1,10 @@
-import{app}from './app'
-import { env } from './env';
-
+import { app } from './app'
+import { env } from './env'
 
 app
   .listen({
     port: env.PORT,
   })
   .then(() => {
-    console.log('HTTP server running!');
-  });
+    console.log('HTTP Server Running!')
+  })

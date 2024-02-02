@@ -13,7 +13,7 @@ describe('Transactions routes', () => {
   })
 
   beforeEach(() => {
-    execSync('npm run knex migrate:rollback --all')
+    execSync('npm run knex migrate:rollback--all')
     execSync('npm run knex migrate:latest')
   })
 
