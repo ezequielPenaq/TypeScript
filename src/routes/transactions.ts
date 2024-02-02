@@ -2,7 +2,7 @@
 
 import { FastifyInstance } from 'fastify'
 import {z} from 'zod'
-import crypto, { randomUUID } from 'node:crypto'
+import  { randomUUID } from 'node:crypto'
 import { knex } from '../database'
 import coockies from '@fastify/cookie'
 import { checkSessionIdExists } from '../middlewares/check-sessions-id-exist'
